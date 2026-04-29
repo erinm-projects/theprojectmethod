@@ -26,7 +26,7 @@
           rgba(0,0,0,0.55),
           rgba(0,0,0,0.55)
         ),
-        url('https://images.unsplash.com/photo-1551836022-deb4988cc6c0');
+        url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
       background-size: cover;
       background-position: center;
     }
@@ -50,8 +50,39 @@
 
     .section-title {
       font-weight: 600;
-      margin-bottom: 30px;
-      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .muted {
+      color: #666;
+    }
+
+    /* INTRO LAYOUT */
+    .intro-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    .intro-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 12px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 768px) {
+      .intro-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
     }
 
     /* CARDS */
@@ -92,10 +123,6 @@
       padding: 10px 16px;
     }
 
-    .muted {
-      color: #666;
-    }
-
     .divider {
       border-top: 1px solid #eee;
     }
@@ -115,28 +142,40 @@
   </div>
 </div>
 
-<!-- INTRO -->
+<!-- INTRO (NEW LEFT/RIGHT LAYOUT) -->
 <div class="section">
-  <div class="container text-center">
+  <div class="container">
 
-    <h4 class="section-title">Approach & selected work</h4>
+    <div class="intro-wrapper">
 
-    <p class="muted" style="max-width:750px;margin:0 auto;">
-      Selected examples of research, strategy, and insight work by Erin M.
-      These projects involve designing, facilitating, and delivering structured analysis,
-      research outputs, and applied work across different organisations and contexts.
-    </p>
+      <!-- LEFT -->
+      <div class="intro-text">
 
-    <p class="muted" style="max-width:750px;margin:20px auto 0;">
-      The Project Method is an approach used to structure thinking, break down complex problems,
-      and guide research-led decision-making from insight to execution.
-    </p>
+        <h4 class="section-title">Approach & selected work</h4>
 
-    <p class="mt-3">
-      <a href="https://www.linkedin.com/in/connectwitherinm/" target="_blank" class="btn btn-outline-dark btn-sm">
-        Connect on LinkedIn
-      </a>
-    </p>
+        <p class="muted">
+          Selected examples of research, strategy, and insight work by Erin M.
+          These projects involve designing, facilitating, and delivering structured analysis,
+          research outputs, and applied work across different organisations and contexts.
+        </p>
+
+        <p class="muted">
+          The Project Method is an approach used to structure thinking, break down complex problems,
+          and guide research-led decision-making from insight to execution.
+        </p>
+
+        <a href="https://www.linkedin.com/in/connectwitherinm/" target="_blank" class="btn btn-outline-dark btn-sm">
+          Connect on LinkedIn
+        </a>
+
+      </div>
+
+      <!-- RIGHT (PROFILE IMAGE) -->
+      <div class="intro-image"
+           style="background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2');">
+      </div>
+
+    </div>
 
   </div>
 </div>
@@ -176,7 +215,7 @@
         <div class="project-card">
 
           <div class="project-img"
-               style="background-image:url('https://images.unsplash.com/photo-1551836022-deb4988cc6c0');">
+               style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71');">
           </div>
 
           <div class="project-body">
